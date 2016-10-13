@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion> 
+  <groupId>com.modelon.oslc.adapter.fmi</groupId> 
+  <artifactId>oslc4j-fmi-build</artifactId> 
+  <version>1.1.0</version> 
+  <packaging>pom</packaging>
+  
+  <name>oslc4j-fmi-build</name>
+
+  <scm>
+      <url>https://bitbucket.org/koneksys/oslc-adapter-fmi</url>
+  </scm>
+
+  <modules> 
+    <module>../com.modelon.oslc.adapter.fmi.ecore</module>
+    <module>../com.modelon.oslc.adapter.fmi.resources</module>
+    <module>../com.modelon.oslc.adapter.fmi.cinterface</module>
+    <module>../com.modelon.oslc.adapter.fmi</module> 
+  </modules>
+
+  <distributionManagement>
+      <repository>
+          <id>undefined</id>
+          <name>Oslc Adapter FMI Releases</name>
+          <url>undefined</url>
+      </repository>
+      <snapshotRepository>
+          <id>undefined</id>
+          <name>Oslc Adapter FMI Snapshots</name>
+          <url>undefined</url>
+      </snapshotRepository>
+  </distributionManagement>
+  <description>Toplevel Maven build for OSLC FMI adapter</description>
+</project>

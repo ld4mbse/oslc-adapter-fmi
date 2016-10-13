@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="1.0"
+  modelName="IntegerNetwork1"
+  modelIdentifier="IntegerNetwork1"
+  guid="{8c4e810f-3df3-4a00-8276-176fa3c9f9e0}"
+  description="Demonstrates the usage of blocks from Modelica.Blocks.MathInteger"
+  generationTool="OpenModelica Compiler 1.9.2+dev (r24999)"
+  generationDateAndTime="2015-03-10T16:07:48Z"
+  variableNamingConvention="structured"
+  numberOfContinuousStates="0"
+  numberOfEventIndicators="8">
+  <DefaultExperiment startTime="0.0" stopTime="10.0" tolerance="1e-006"/>
+  <ModelVariables>
+  <ScalarVariable
+    name="y5"
+    valueReference="0"
+    variability="continuous"
+    causality="output"
+    alias="noAlias">
+    <Real/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse1.pulsStart"
+    valueReference="1"
+    description="Start time of pulse"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse2.pulsStart"
+    valueReference="2"
+    description="Start time of pulse"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse1.Twidth"
+    valueReference="3"
+    description="width of one pulse"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.5"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse1.period"
+    valueReference="4"
+    description="Time for one period"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="1.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse1.startTime"
+    valueReference="5"
+    description="Time instant of first pulse"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse1.width"
+    valueReference="6"
+    description="Width of pulse in % of period"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="50.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse2.Twidth"
+    valueReference="7"
+    description="width of one pulse"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="1.6"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse2.period"
+    valueReference="8"
+    description="Time for one period"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="2.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse2.startTime"
+    valueReference="9"
+    description="Time instant of first pulse"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse2.width"
+    valueReference="10"
+    description="Width of pulse in % of period"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="80.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sine.amplitude"
+    valueReference="11"
+    description="Amplitude of sine wave"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="3.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sine.freqHz"
+    valueReference="12"
+    description="Frequency of sine wave"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.1"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sine.offset"
+    valueReference="13"
+    description="Offset of output signal"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sine.phase"
+    valueReference="14"
+    description="Phase of sine wave"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sine.startTime"
+    valueReference="15"
+    description="Output = offset for time &lt; startTime"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="realToInteger.u"
+    valueReference="16"
+    description="Connector of Real input signal"
+    variability="continuous"
+    causality="internal"
+    alias="noAlias">
+    <Real/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sine.y"
+    valueReference="17"
+    description="Connector of Real output signal"
+    variability="continuous"
+    causality="internal"
+    alias="noAlias">
+    <Real/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="integerStep"
+    valueReference="0"
+    variability="continuous"
+    causality="input"
+    alias="noAlias">
+    <Integer start="0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.expr[1]"
+    valueReference="1"
+    description="y = if u[i] then expr[i] elseif use_pre_as_default then pre(y) else y_default"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.expr[2]"
+    valueReference="2"
+    description="y = if u[i] then expr[i] elseif use_pre_as_default then pre(y) else y_default"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.firstActiveIndex"
+    valueReference="3"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.y"
+    valueReference="4"
+    description="Output depending on expression"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue.number"
+    valueReference="5"
+    description="Number to visualize if use_numberPort=false (time varying)"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue1.number"
+    valueReference="6"
+    description="Number to visualize if use_numberPort=false (time varying)"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue2.number"
+    valueReference="7"
+    description="Number to visualize if use_numberPort=false (time varying)"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="triggeredAdd.local_set"
+    valueReference="8"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="triggeredAdd.y"
+    valueReference="9"
+    description="Integer output signal"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="y"
+    valueReference="10"
+    variability="discrete"
+    causality="output"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="y1"
+    valueReference="11"
+    variability="discrete"
+    causality="output"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="y2"
+    valueReference="12"
+    variability="discrete"
+    causality="output"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="y3"
+    valueReference="13"
+    variability="discrete"
+    causality="output"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="y4"
+    valueReference="14"
+    variability="discrete"
+    causality="output"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="integerConstant.k"
+    valueReference="15"
+    description="Constant output value"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="1"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.nu"
+    valueReference="16"
+    description="Number of input connections"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="2"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.y_default"
+    valueReference="17"
+    description="Default value of output y if use_pre_as_default=false, as well as pre(y) at initial time"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="2"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="product.nu"
+    valueReference="18"
+    description="Number of input connections"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="2"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sum.k[1]"
+    valueReference="19"
+    description="Input gains"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="1"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sum.k[2]"
+    valueReference="20"
+    description="Input gains"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="1"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sum.k[3]"
+    valueReference="21"
+    description="Input gains"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="1"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sum.nu"
+    valueReference="22"
+    description="Number of input connections"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="3"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="triggeredAdd.y_start"
+    valueReference="23"
+    description="Initial and reset value of y if set port is not used"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Integer start="0"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="integerConstant.y"
+    valueReference="24"
+    description="Connector of Integer output signal"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="product.u[1]"
+    valueReference="25"
+    description="Vector of Integer input signals"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="product.u[2]"
+    valueReference="26"
+    description="Vector of Integer input signals"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="product.y"
+    valueReference="27"
+    description="Integer output signal"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="realToInteger.y"
+    valueReference="28"
+    description="Connector of Integer output signal"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue.numberPort"
+    valueReference="29"
+    description="Number to be shown in diagram layer if use_numberPort = true"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue.showNumber"
+    valueReference="30"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue1.numberPort"
+    valueReference="31"
+    description="Number to be shown in diagram layer if use_numberPort = true"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue1.showNumber"
+    valueReference="32"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue2.numberPort"
+    valueReference="33"
+    description="Number to be shown in diagram layer if use_numberPort = true"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue2.showNumber"
+    valueReference="34"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue3.number"
+    valueReference="35"
+    description="Number to visualize if use_numberPort=false (time varying)"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue3.showNumber"
+    valueReference="36"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sum.u[1]"
+    valueReference="37"
+    description="Vector of Integer input signals"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sum.u[2]"
+    valueReference="38"
+    description="Vector of Integer input signals"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sum.u[3]"
+    valueReference="39"
+    description="Vector of Integer input signals"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="sum.y"
+    valueReference="40"
+    description="Integer output signal"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="triggeredAdd.u"
+    valueReference="41"
+    description="Integer input signal"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Integer/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="_D_whenCondition1"
+    valueReference="0"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="_D_whenCondition2"
+    valueReference="1"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="_D_whenCondition3"
+    valueReference="2"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="_D_whenCondition4"
+    valueReference="3"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.u[1]"
+    valueReference="4"
+    description="Set y = expr[i], if u[i] = true"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.u[2]"
+    valueReference="5"
+    description="Set y = expr[i], if u[i] = true"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="triggeredAdd.local_reset"
+    valueReference="6"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="multiSwitch1.use_pre_as_default"
+    valueReference="7"
+    description="= true, y holds its last value if all u[i]=false, otherwise y=y_default"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue.use_numberPort"
+    valueReference="8"
+    description="= true, if numberPort enabled"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue1.use_numberPort"
+    valueReference="9"
+    description="= true, if numberPort enabled"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue2.use_numberPort"
+    valueReference="10"
+    description="= true, if numberPort enabled"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="true"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="showValue3.use_numberPort"
+    valueReference="11"
+    description="= true, if numberPort enabled"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="triggeredAdd.use_reset"
+    valueReference="12"
+    description="=true, if reset port enabled"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="triggeredAdd.use_set"
+    valueReference="13"
+    description="=true, if set port enabled and used as default value when reset"
+    variability="parameter"
+    causality="internal"
+    alias="noAlias">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse1.y"
+    valueReference="14"
+    description="Connector of Boolean output signal"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="booleanPulse2.y"
+    valueReference="15"
+    description="Connector of Boolean output signal"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean/>
+  </ScalarVariable>
+  <ScalarVariable
+    name="triggeredAdd.trigger"
+    valueReference="16"
+    variability="discrete"
+    causality="internal"
+    alias="noAlias">
+    <Boolean/>
+  </ScalarVariable>
+  </ModelVariables>
+</fmiModelDescription>

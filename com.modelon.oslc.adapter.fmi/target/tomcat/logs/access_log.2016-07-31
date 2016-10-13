@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:00:13:51 +0700] "GET / HTTP/1.1" 404 - http-bio-8686-exec-4 0
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:19:33:55 +0700] "GET /oslc4jfmi/services/catalog HTTP/1.1" 200 7618 http-bio-8686-exec-10 635
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:19:33:55 +0700] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - http-bio-8686-exec-8 0
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:19:33:55 +0700] "GET /apple-touch-icon.png HTTP/1.1" 404 - http-bio-8686-exec-8 0
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:19:33:55 +0700] "GET /oslc4jfmi/images/favicon.ico HTTP/1.1" 304 - http-bio-8686-exec-6 135
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:19:33:55 +0700] "GET /oslc4jfmi/services/catalog HTTP/1.1" 200 7618 http-bio-8686-exec-10 4
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:19:33:55 +0700] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 - http-bio-8686-exec-8 0
+0:0:0:0:0:0:0:1 - - [31/Jul/2016:19:33:55 +0700] "GET /apple-touch-icon.png HTTP/1.1" 404 - http-bio-8686-exec-8 0

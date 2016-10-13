@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.modelon.oslc.adapter.fmi</groupId>
+  <artifactId>oslc4j-fmi</artifactId>
+  <version>1.1.0</version>
+  <packaging>war</packaging>
+
+  <name>oslc4j-fmi</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <scope>provided</scope>
+      <version>2.3.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <scope>provided</scope>
+      <version>3.1-b06</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>jsr311-api</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.modelon.oslc.adapter.fmi</groupId>
+      <artifactId>oslc4j-fmi-resources</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.eclipse.lyo.oslc4j.core</groupId>
+      <artifactId>oslc4j-wink</artifactId>
+      <version>3.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.lyo.oslc4j.core</groupId>
+      <artifactId>oslc4j-jena-provider</artifactId>
+      <version>3.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.lyo.oslc4j.core</groupId>
+      <artifactId>oslc4j-core</artifactId>
+      <version>3.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.lyo.core.query</groupId>
+      <artifactId>oslc-query</artifactId>
+      <version>[1.1,)</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.eclipse.lyo.oslc4j.core</groupId>
+      <artifactId>oslc4j-json4j-provider</artifactId>
+      <version>3.0.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+
+  </dependencies>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>2.19.1</version>
+      </plugin>
+    </plugins>
+  </reporting>
+  
+  <build>
+    <plugins>
+
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>conf/fmi/temp</directory>
+              <includes>
+                <include>**/*</include>
+              </includes>
+              <followSymlinks>false</followSymlinks>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <server>tomcat7</server>
+          <port>8686</port>
+          <url>http://localhost:8080/manager/text</url>
+          <path>/oslc4jfmi</path>
+          <webResources>
+            <resource>
+              <directory>fmu</directory>
+            </resource>
+          </webResources>
+          <portNames>
+            <portName>maven.tomcat.port</portName>
+          </portNames>
+        </configuration>
+      </plugin>
+
+
+    </plugins>
+  </build>
+
+</project>

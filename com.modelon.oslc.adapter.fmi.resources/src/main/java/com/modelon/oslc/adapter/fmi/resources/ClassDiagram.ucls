@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIVendorAnnotation" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIVendorAnnotation.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="196" x="447" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIVendorTool" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIVendorTool.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="132" width="196" x="230" y="357"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMISourceFile" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMISourceFile.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="114" width="196" x="1174" y="357"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIListingDirectDependency" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIListingDirectDependency.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="223" x="1099" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIDerivative" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIDerivative.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="168" width="196" x="466" y="357"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIEnumeration" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIEnumeration.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="150" width="196" x="1834" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIModelDescription" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIModelDescription.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="546" width="215" x="1128" y="-635"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIOutput" project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIOutput.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="168" width="196" x="702" y="357"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMICoSimulation" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMICoSimulation.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="366" width="305" x="919" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIScalarVariable" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIScalarVariable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="312" width="231" x="1414" y="357"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIListingAlias" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIListingAlias.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="196" x="1362" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIDefaultExperiment" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIDefaultExperiment.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="168" width="196" x="211" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIInitialUnknown" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIInitialUnknown.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="168" width="196" x="938" y="357"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIModelStructure" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIModelStructure.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="150" width="196" x="683" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMITypeDef" project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMITypeDef.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="168" width="196" x="1834" y="357"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIBaseUnitDefinition" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIBaseUnitDefinition.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="196" x="2070" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIScalarVariableType" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIScalarVariableType.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="240" width="196" x="1598" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIBaseUnit" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIBaseUnit.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="186" width="196" x="2070" y="357"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIModelVariables" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIModelVariables.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="196" x="1598" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIFMU" project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIFMU.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="168" width="196" x="1128" y="-843"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMITypeDefinition" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMITypeDefinition.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="186" width="196" x="1834" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIUnitDefinition" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIUnitDefinition.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="132" width="196" x="2070" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIModelExchange" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIModelExchange.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="276" width="294" x="1264" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.modelon.oslc.adapter.fmi.resources.FMIAnnotation" 
+    project="oslc4j-fmi-resources" 
+    file="/oslc4j-fmi-resources/src/main/java/com/modelon/oslc/adapter/fmi/resources/FMIAnnotation.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="132" width="196" x="230" y="709"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <association id="25">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="26" name="fmiOutputList"/>      
+      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="29" name="fmiSourceFileList"/>      
+      <multiplicity id="30" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="32" name="fmiInitialUnknownList"/>      
+      <multiplicity id="33" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="35" name="fmiBaseUnitDefinition"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="38" name="fmiAnnotationList"/>      
+      <multiplicity id="39" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="40">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="41" name="fmiSourceFileList"/>      
+      <multiplicity id="42" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="44" name="fmiEnumerationList"/>      
+      <multiplicity id="45" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="46">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="47" name="fmiModelExchange"/>      
+      <multiplicity id="48" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="49">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="50" name="fmiListingAliasList"/>      
+      <multiplicity id="51" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="53" name="fmiCoSimulation"/>      
+      <multiplicity id="54" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="55">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="56" name="fmiListingDirectDependencyList"/>      
+      <multiplicity id="57" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="58">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="59" name="fmiScalarVariableList"/>      
+      <multiplicity id="60" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="61">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="62" name="fmiVendorTool"/>      
+      <multiplicity id="63" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="64">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="65" name="fmiDefaultExperiment"/>      
+      <multiplicity id="66" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="67">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="68" name="fmiScalarVariableType"/>      
+      <multiplicity id="69" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="70">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="71" name="fmiModelDescription"/>      
+      <multiplicity id="72" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="73">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="74" name="fmiVendorAnnotationList"/>      
+      <multiplicity id="75" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="76">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="77" name="fmiModelVariables"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="79">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="80" name="fmiTypeDefinitionList"/>      
+      <multiplicity id="81" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="82">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="83" name="fmiUnitDefinitionList"/>      
+      <multiplicity id="84" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="85">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="86" name="fmiModelStructure"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="88">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="89" name="fmiTypeDef"/>      
+      <multiplicity id="90" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="91">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="92" name="fmiBaseUnit"/>      
+      <multiplicity id="93" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="94">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="95" name="fmiDerivativeList"/>      
+      <multiplicity id="96" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="false" package="false" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

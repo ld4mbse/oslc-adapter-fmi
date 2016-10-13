@@ -1,0 +1,34 @@
+body {
+  padding: 0px;
+  padding-top: 50px;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+ul.nav li a, ul.nav li a:visited {
+    color: #08088A !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #08088A !important;
+}
+
+ul.nav li.active a {
+    color: #08088A !important;
+}
+
+.menu {
+  z-index:100;
+  position: fixed;
+  top:0;
+}
+
+#fmi_footer {
+  z-index:100;
+  position: fixed;
+  bottom:0px;
+  right:0px;
+}

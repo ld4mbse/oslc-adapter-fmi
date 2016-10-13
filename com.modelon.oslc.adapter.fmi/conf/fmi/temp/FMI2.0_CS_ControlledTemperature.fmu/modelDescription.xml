@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription fmiVersion="2.0" modelName="ControlledTemperature" guid="14ac906d8d18e8da4c3d119d0c9a8a4" generationTool="JModelica.org" generationDateAndTime="2015-07-03T16:02:44" variableNamingConvention="structured" numberOfEventIndicators="3">
+	<CoSimulation modelIdentifier="ControlledTemperature" needsExecutionTool="false" canHandleVariableCommunicationStepSize="true" canInterpolateInputs="true" maxOutputDerivativeOrder="0" canRunAsynchronuously="false" canBeInstantiatedOnlyOncePerProcess="true" canNotUseMemoryManagementFunctions="false" canSerializeFMUstate="false" providesDirectionalDerivative="false" />
+	<UnitDefinitions>
+		<Unit name="1/K">
+		</Unit>
+		<Unit name="A">
+		</Unit>
+		<Unit name="degC">
+		</Unit>
+		<Unit name="K">
+			<DisplayUnit name="degC" />
+		</Unit>
+		<Unit name="W">
+		</Unit>
+		<Unit name="1">
+		</Unit>
+		<Unit name="V">
+		</Unit>
+		<Unit name="Ohm">
+		</Unit>
+		<Unit name="s">
+		</Unit>
+		<Unit name="W/K">
+		</Unit>
+		<Unit name="S">
+		</Unit>
+		<Unit name="K/s">
+		</Unit>
+		<Unit name="J/K">
+		</Unit>
+	</UnitDefinitions>
+	<LogCategories>
+		<Category name="logLevel1" description="logLevel1 - fatal errors" />
+		<Category name="logLevel2" description="logLevel2 - errors" />
+		<Category name="logLevel3" description="logLevel3 - warnings" />
+		<Category name="logLevel4" description="logLevel4 - info" />
+		<Category name="logLevel5" description="logLevel5 - verobse" />
+		<Category name="logLevel6" description="logLevel6 - debug" />
+	</LogCategories>
+	<DefaultExperiment stopTime="10.0" />
+	<VendorAnnotations>
+		<Tool name="JModelica.org">
+		</Tool>
+	</VendorAnnotations>
+	<ModelVariables>
+		<ScalarVariable name="TAmb" valueReference="7" description="Ambient Temperature" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" start="293.15" />
+		</ScalarVariable>
+		<ScalarVariable name="TDif" valueReference="8" description="Error in Temperature" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="ThermodynamicTemperature" unit="K" relativeQuantity="false" start="2.0" />
+		</ScalarVariable>
+		<ScalarVariable name="TRes" valueReference="62" description="Resulting Temperature" causality="output" variability="continuous" initial="approx">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" start="288.15" />
+		</ScalarVariable>
+		<ScalarVariable name="_block_jacobian_check" valueReference="536870961" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="false" />
+		</ScalarVariable>
+		<ScalarVariable name="_block_jacobian_check_tol" valueReference="21" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E-6" />
+		</ScalarVariable>
+		<ScalarVariable name="_block_solver_experimental_mode" valueReference="268435498" causality="parameter" variability="fixed" initial="exact">
+			<Integer start="0" />
+		</ScalarVariable>
+		<ScalarVariable name="_cs_rel_tol" valueReference="22" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E-6" />
+		</ScalarVariable>
+		<ScalarVariable name="_cs_solver" valueReference="268435499" causality="parameter" variability="fixed" initial="exact">
+			<Integer start="0" />
+		</ScalarVariable>
+		<ScalarVariable name="_cs_step_size" valueReference="23" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="0.001" />
+		</ScalarVariable>
+		<ScalarVariable name="_enforce_bounds" valueReference="536870962" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="true" />
+		</ScalarVariable>
+		<ScalarVariable name="_events_default_tol" valueReference="24" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E-10" />
+		</ScalarVariable>
+		<ScalarVariable name="_events_tol_factor" valueReference="25" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E-4" />
+		</ScalarVariable>
+		<ScalarVariable name="_iteration_variable_scaling" valueReference="268435500" causality="parameter" variability="fixed" initial="exact">
+			<Integer start="1" />
+		</ScalarVariable>
+		<ScalarVariable name="_log_level" valueReference="268435501" causality="parameter" variability="fixed" initial="exact">
+			<Integer start="3" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_check_jac_cond" valueReference="536870963" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="false" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_default_tol" valueReference="26" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E-10" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_max_iter" valueReference="268435502" causality="parameter" variability="fixed" initial="exact">
+			<Integer start="100" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_max_residual_scaling_factor" valueReference="27" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E10" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_min_residual_scaling_factor" valueReference="28" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E-10" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_min_tol" valueReference="29" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E-12" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_regularization_tolerance" valueReference="30" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="-1.0" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_step_limit_factor" valueReference="31" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="10.0" />
+		</ScalarVariable>
+		<ScalarVariable name="_nle_solver_tol_factor" valueReference="32" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="1.0E-4" />
+		</ScalarVariable>
+		<ScalarVariable name="_rescale_after_singular_jac" valueReference="536870964" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="true" />
+		</ScalarVariable>
+		<ScalarVariable name="_rescale_each_step" valueReference="536870965" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="false" />
+		</ScalarVariable>
+		<ScalarVariable name="_residual_equation_scaling" valueReference="268435503" causality="parameter" variability="fixed" initial="exact">
+			<Integer start="1" />
+		</ScalarVariable>
+		<ScalarVariable name="_runtime_log_to_file" valueReference="536870966" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="false" />
+		</ScalarVariable>
+		<ScalarVariable name="_use_Brent_in_1d" valueReference="536870967" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="true" />
+		</ScalarVariable>
+		<ScalarVariable name="_use_jacobian_equilibration" valueReference="536870968" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="false" />
+		</ScalarVariable>
+		<ScalarVariable name="_use_newton_for_brent" valueReference="536870969" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="true" />
+		</ScalarVariable>
+		<ScalarVariable name="constantVoltage.V" valueReference="9" description="Value of constant voltage" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" start="10.0" />
+		</ScalarVariable>
+		<ScalarVariable name="constantVoltage.i" valueReference="134217796" description="Current flowing from pin p to pin n" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="constantVoltage.n.i" valueReference="68" description="Current flowing into the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="constantVoltage.n.v" valueReference="0" description="Potential at the pin" causality="local" variability="constant" initial="exact">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" start="0.0" />
+		</ScalarVariable>
+		<ScalarVariable name="constantVoltage.p.i" valueReference="134217796" description="Current flowing into the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="constantVoltage.p.v" valueReference="39" description="Potential at the pin" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="constantVoltage.v" valueReference="37" description="Voltage drop between the two pins (= p.v - n.v)" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="fixedTemperature.T" valueReference="35" description="Fixed temperature at port" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="fixedTemperature.port.Q_flow" valueReference="70" description="Heat flow rate (positive if flowing from outside into the component)" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Power" unit="W" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="fixedTemperature.port.T" valueReference="38" description="Port temperature" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="ground.p.i" valueReference="63" description="Current flowing into the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="ground.p.v" valueReference="5" description="Potential at the pin" causality="local" variability="constant" initial="exact">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" start="0.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatCapacitor.C" valueReference="10" description="Heat capacity of element (= cp*m)" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="HeatCapacity" unit="J/K" relativeQuantity="false" start="1.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatCapacitor.T" valueReference="61" description="Temperature of element" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="der(heatCapacitor.T)" valueReference="60" causality="local" variability="continuous" initial="calculated">
+			<Real relativeQuantity="false" nominal="300.0" derivative="44" />
+		</ScalarVariable>
+		<ScalarVariable name="heatCapacitor.der_T" valueReference="64" description="Time derivative of temperature (= der(T))" causality="local" variability="continuous" initial="approx">
+			<Real quantity="TemperatureSlope" unit="K/s" relativeQuantity="false" start="0.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatCapacitor.port.Q_flow" valueReference="65" description="Heat flow rate (positive if flowing from outside into the component)" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Power" unit="W" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="heatCapacitor.port.T" valueReference="61" description="Port temperature" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.LossPower" valueReference="69" description="Loss power leaving component via heatPort" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Power" unit="W" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.R" valueReference="66" description="Resistance = R_ref*(1 + alpha*(T_heatPort - T_ref))" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Resistance" unit="Ohm" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.R_ref" valueReference="11" description="Resistance at temperature T_ref" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="Resistance" unit="Ohm" relativeQuantity="false" start="10.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.T" valueReference="34" description="Fixed device temperature if useHeatPort = false" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.T_heatPort" valueReference="61" description="Temperature of heatPort" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.T_ref" valueReference="12" description="Reference temperature" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" start="293.15" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.alpha" valueReference="13" description="Temperature coefficient of resistance (R = R_ref*(1 + alpha*(heatPort.T - T_ref))" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="LinearTemperatureCoefficient" unit="1/K" relativeQuantity="false" start="0.00392156862745098" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.heatPort.Q_flow" valueReference="134217797" description="Heat flow rate (positive if flowing from outside into the component)" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Power" unit="W" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.heatPort.T" valueReference="61" description="Port temperature" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.i" valueReference="68" description="Current flowing from pin p to pin n" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.n.i" valueReference="134217796" description="Current flowing into the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.n.v" valueReference="6" description="Potential at the pin" causality="local" variability="constant" initial="exact">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" start="0.0" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.p.i" valueReference="68" description="Current flowing into the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.p.v" valueReference="67" description="Potential at the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.useHeatPort" valueReference="536870970" description="=true, if heatPort is enabled" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Boolean />
+		</ScalarVariable>
+		<ScalarVariable name="heatingResistor.v" valueReference="67" description="Voltage drop between the two pins (= p.v - n.v)" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.Goff" valueReference="16" description="Opened switch conductance" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="Conductance" unit="S" relativeQuantity="false" min="0.0" start="1.0E-5" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.LossPower" valueReference="74" description="Loss power leaving component via heatPort" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Power" unit="W" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.Ron" valueReference="15" description="Closed switch resistance" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="Resistance" unit="Ohm" relativeQuantity="false" min="0.0" start="1.0E-5" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.T" valueReference="33" description="Fixed device temperature if useHeatPort = false" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.T_heatPort" valueReference="4" description="Temperature of heatPort" causality="local" variability="constant" initial="exact">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" start="293.15" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.control" valueReference="536870990" description="true =&gt; switch open, false =&gt; p--n connected" causality="local" variability="discrete" initial="calculated">
+			<Boolean />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.i" valueReference="68" description="Current flowing from pin p to pin n" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.n.i" valueReference="134217796" description="Current flowing into the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.n.v" valueReference="67" description="Potential at the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.p.i" valueReference="68" description="Current flowing into the pin" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.p.v" valueReference="41" description="Potential at the pin" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.s" valueReference="72" description="Auxiliary variable" causality="local" variability="continuous" initial="calculated">
+			<Real unit="1" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.unitCurrent" valueReference="3" causality="local" variability="constant" initial="exact">
+			<Real quantity="ElectricCurrent" unit="A" relativeQuantity="false" start="1.0" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.unitVoltage" valueReference="2" causality="local" variability="constant" initial="exact">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" start="1.0" />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.useHeatPort" valueReference="536870971" description="=true, if heatPort is enabled" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Boolean />
+		</ScalarVariable>
+		<ScalarVariable name="idealSwitch.v" valueReference="73" description="Voltage drop between the two pins (= p.v - n.v)" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ElectricPotential" unit="V" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="logicalNot.u" valueReference="536870991" description="Connector of Boolean input signal" causality="local" variability="discrete" initial="calculated">
+			<Boolean />
+		</ScalarVariable>
+		<ScalarVariable name="logicalNot.y" valueReference="536870990" description="Connector of Boolean output signal" causality="local" variability="discrete" initial="calculated">
+			<Boolean />
+		</ScalarVariable>
+		<ScalarVariable name="onOffController.bandwidth" valueReference="36" description="Bandwidth around reference signal" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="onOffController.pre_y_start" valueReference="536870960" description="Value of pre(y) at initial time" causality="parameter" variability="fixed" initial="exact">
+			<Boolean start="false" />
+		</ScalarVariable>
+		<ScalarVariable name="onOffController.reference" valueReference="75" description="Connector of Real input signal used as reference signal" causality="local" variability="continuous" initial="calculated">
+			<Real relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="onOffController.u" valueReference="76" description="Connector of Real input signal used as measurement signal" causality="local" variability="continuous" initial="calculated">
+			<Real relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="onOffController.y" valueReference="536870991" description="Connector of Real output signal used as actuator signal" causality="local" variability="discrete" initial="calculated">
+			<Boolean />
+		</ScalarVariable>
+		<ScalarVariable name="ramp.duration" valueReference="18" description="Duration of ramp (= 0.0 gives a Step)" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="Time" unit="s" relativeQuantity="false" min="0.0" start="6.0" />
+		</ScalarVariable>
+		<ScalarVariable name="ramp.height" valueReference="17" description="Height of ramps" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="25.0" />
+		</ScalarVariable>
+		<ScalarVariable name="ramp.offset" valueReference="19" description="Offset of output signal" causality="parameter" variability="fixed" initial="exact">
+			<Real relativeQuantity="false" start="25.0" />
+		</ScalarVariable>
+		<ScalarVariable name="ramp.startTime" valueReference="20" description="Output = offset for time &lt; startTime" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="Time" unit="s" relativeQuantity="false" start="2.0" />
+		</ScalarVariable>
+		<ScalarVariable name="ramp.y" valueReference="75" description="Connector of Real output signal" causality="local" variability="continuous" initial="calculated">
+			<Real relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="temperatureSensor.T" valueReference="76" description="Absolute temperature in degree Celsius as output signal" causality="local" variability="continuous" initial="calculated">
+			<Real unit="degC" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="temperatureSensor.port.Q_flow" valueReference="1" description="Heat flow rate (positive if flowing from outside into the component)" causality="local" variability="constant" initial="exact">
+			<Real quantity="Power" unit="W" relativeQuantity="false" start="0.0" />
+		</ScalarVariable>
+		<ScalarVariable name="temperatureSensor.port.T" valueReference="61" description="Port temperature" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="thermalConductor.G" valueReference="14" description="Constant thermal conductance of material" causality="parameter" variability="fixed" initial="exact">
+			<Real quantity="ThermalConductance" unit="W/K" relativeQuantity="false" start="0.1" />
+		</ScalarVariable>
+		<ScalarVariable name="thermalConductor.Q_flow" valueReference="70" description="Heat flow rate from port_a -&gt; port_b" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Power" unit="W" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="thermalConductor.dT" valueReference="71" description="port_a.T - port_b.T" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="thermalConductor.port_a.Q_flow" valueReference="70" description="Heat flow rate (positive if flowing from outside into the component)" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Power" unit="W" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="thermalConductor.port_a.T" valueReference="61" description="Port temperature" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+		<ScalarVariable name="thermalConductor.port_b.Q_flow" valueReference="134217798" description="Heat flow rate (positive if flowing from outside into the component)" causality="local" variability="continuous" initial="calculated">
+			<Real quantity="Power" unit="W" relativeQuantity="false" />
+		</ScalarVariable>
+		<ScalarVariable name="thermalConductor.port_b.T" valueReference="40" description="Port temperature" causality="calculatedParameter" variability="fixed" initial="calculated">
+			<Real quantity="ThermodynamicTemperature" unit="K" displayUnit="degC" relativeQuantity="false" min="0.0" nominal="300.0" />
+		</ScalarVariable>
+	</ModelVariables>
+	<ModelStructure>
+		<Outputs>
+			<Unknown index="3" dependencies="44" />
+		</Outputs>
+		<Derivatives>
+			<Unknown index="45" dependencies="44" />
+		</Derivatives>
+		<InitialUnknowns>
+			<Unknown index="3" dependencies="1" />
+			<Unknown index="36" dependencies="31" />
+			<Unknown index="37" dependencies="31" />
+			<Unknown index="38" dependencies="1" />
+			<Unknown index="40" dependencies="1" />
+			<Unknown index="44" dependencies="1" />
+			<Unknown index="45" dependencies="1 2 31 43 51 54 55 65 67 84 88 89 90 91 96" />
+			<Unknown index="52" dependencies="54" />
+			<Unknown index="63" dependencies="" />
+			<Unknown index="68" dependencies="" />
+			<Unknown index="75" dependencies="31" />
+			<Unknown index="79" dependencies="" />
+			<Unknown index="83" dependencies="2" />
+			<Unknown index="102" dependencies="1" />
+		</InitialUnknowns>
+	</ModelStructure>
+</fmiModelDescription>

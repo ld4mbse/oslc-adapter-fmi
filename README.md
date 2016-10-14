@@ -8,7 +8,8 @@ Date
     24 July 2016
 Authors
     Vorachet Jaroensawas, Koneksys (vorachet.jaroensawas@koneksys.com)
-    Axel Reichwein, Koneksys (axel.reichwein@koneksys.com)  
+    Axel Reichwein, Koneksys (axel.reichwein@koneksys.com)
+    Hubertus Tummeshceit (hubertus.tummescheit@modelon.com)
 ```
 
 ## Table of Contents
@@ -42,7 +43,7 @@ Authors
     6. Third party libraries
 
 ## 1. Summary
-OSLC4j-FMI is intended as a OSLC adapter for publishing FMUs (Functional Mockup Units) that follow OSLC Standard. This version of the library supports FMI 1.0 and FMI 2.0. See http://www.fmi-standard.org
+OSLC4j-FMI is intended as a OSLC adapter for publishing FMUs (Functional Mockup Units) that follow FMI Standard. This version of the library supports FMI 1.0 and FMI 2.0. See http://www.fmi-standard.org. The interface was developed for Modelon by Koneksys. The C-language part is based on the open source FMI-Library by Modelon, and the Java-language part on oslc4j by Koneksys. 
 
 ## 2. Understanding OSLC FMI Adapter Components
 OSLC4J-FMI consists of two parts.
@@ -107,7 +108,7 @@ To build FMI Library source
 Download FMIL 2.0.2b3 source file from http://www.jmodelica.org/downloads/FMIL/FMILibrary-2.0.2b3-src.zip 
 and extract to com.modelon.oslc.adapter.fmi.cinterface/fmi/FMILibrary-2.0.2b3-src
 
-git clone https://bitbucket.org/koneksys/oslc-adapter-fmi 
+git clone https://github.com/ld4mbse/oslc-adapter-fmi
 cd com.modelon.oslc.adapter.fmi.cinterface
 cd fmi
 cd FMILibrary-2.0.2b3-src
@@ -270,7 +271,7 @@ Eclipse IDE for Java EE Developers is recommended for building the OSLC FMI adap
 
 1. In Eclipse, import projects from Git. (File -> Import -> Git -> Projects from Git)
 2. Click on the Clone Repository icon
-3. In the URI field, paste the following URL: https://bitbucket.org/koneksys/oslc-adapter-fmi 
+3. In the URI field, paste the following URL: https://github.com/ld4mbse/oslc-adapter-fmi
 4. The Host and Repository fields will autofill.
 5. Click Next, only select the master branch
 6. Click Next until Finish.
